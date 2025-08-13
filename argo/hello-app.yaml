@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: REPO_URL_HERE
+    repoURL: https://github.com/domisku/argocd-test.git/
     targetRevision: main
     path: charts/hello
     helm:
       valueFiles:
-      - values.yaml
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: apps
@@ -20,4 +20,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
