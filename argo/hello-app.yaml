@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/domisku/argocd-test.git/
-    targetRevision: main
+    targetRevision: master
     path: charts/hello
     helm:
       valueFiles:
